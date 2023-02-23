@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "패스워드",
-    "database": "로컬db",
+    "password": "ko1009kim",
+    "database": "springtime",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

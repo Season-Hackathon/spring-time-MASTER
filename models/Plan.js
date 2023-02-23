@@ -2,7 +2,7 @@ module.exports = (sequelize, DataTypes) => {
     const Plan = sequelize.define("Plan", {
         name: {
             type: DataTypes.STRING(100),
-            allowNull: false,
+            allowNull: true,
             comment: "접속자 이름"
         },
         day: {

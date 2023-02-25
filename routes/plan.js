@@ -3,12 +3,12 @@ const planController = require('../controller/Cplan');
 
 const router = express.Router()
 
-router.get('plans/me', planController.getMyPlans)
-router.get('plans/meshare', planController.getMyLinks)
-router.get('plans/:userId', planController.getOthersPlans)
+router.get('/me', planController.getMyPlans)
+router.get('/me/share', planController.getMyLinks)
+router.get('/:userId', planController.getOthersPlans)
 
-router.post('plans/me', planController.createMyPlans)
-router.post('plans/:userId', planController.createOthersPlans)
+router.post('/me', planController.createMyPlans)
+router.post('/:userId', planController.createOthersPlans)
 
 
 

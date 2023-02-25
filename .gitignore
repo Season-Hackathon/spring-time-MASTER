@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
+=======
+
+config
+>>>>>>> 24b5572e695770c19f039f34554ffa41e9bb4a42

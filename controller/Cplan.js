@@ -4,6 +4,12 @@ module.exports = {
     getMyPlans: async (req, res) => {
         try {
             const userId = req.body.userId;
+            if (userId == undefined) {
+                return res.json({
+                    ok: false,
+                    message: "userId가 없습니다."
+                })
+            }
             const owner = await User.findOne({
                 where: {userId: userId}
             }) 

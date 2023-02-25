@@ -125,6 +125,27 @@ module.exports = {
             console.log(e)
             res.status(500).json(e)
         }
+        try {
+            const userId = req.params.userId;
+            const owner = await User.findOne({
+                where: {userId: userId}
+            }) 
+            const plans = await Plan.findAll({
+                where: {
+                    owner: owner
+                },
+                attributes : ['name']
+            }).then((res) => res.map((value)=> value.dataValues));
+            
+            return res.status(200).json({
+                ok: true,
+                owner:owner.name,
+                plans
+            })
+        } catch(e) {
+            console.log(e)
+            res.status(500).json(e)
+        }
     },
     createOthersPlans: async (req, res) => {
         async (req, res) => {

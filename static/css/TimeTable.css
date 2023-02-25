@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px;
+}
+
+span{
+    font-weight: bolder;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h1,h3{
+    margin-bottom: 20px;
+}
+
+/* TASKS CONTAINER */
+.task_container{
+    margin-bottom: 3rem;
+    /* background-color: brown; */
+    padding: 10px;
+    display: flex;
+}
+
+.task_container .task_name{
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task_name.selected{
+    box-shadow:0px 0px 0px 2px black inset;
+}
+
+#deselect{
+    background-color: black;
+    color: white;
+}
+
+
+/* SCHEDULE DESIGN */
+.schedule_container{
+    background-color: #CCE0FF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.days_container{
+    display: flex;
+}
+
+.corner{
+    width: 50px;
+    height: 40px;
+    margin: 1px;
+}
+
+.day{
+    width: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    font-weight: bold;
+}
+
+.part_day{
+    display: flex;
+}
+
+.time{
+    width: 50px;
+    height: 40px;
+    color: black;
+    background-color: #CCE0FF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.task{
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    margin: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* Reset Button */
+.deleteBtn{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.deleteBtn:hover{
+    background-color: #eee;
+}
+
+/* Pop up */
+.pop-up_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 170%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up{
+    width: 300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00b4d8;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_answer{
+    margin: 0 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

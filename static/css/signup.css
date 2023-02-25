@@ -1,0 +1,125 @@
+.container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.input-data {
+    width: 610px;
+    border: 1px solid #75ACFF;
+    border-radius: 10px;
+    margin: auto;
+}
+
+img {
+    width: 180px;
+    margin: 20px;
+}
+
+input {
+    width: 412px;
+    height: 40px;
+    background-color: #CCE0FF;
+    border: #CCE0FF;
+    border-radius: 8PX;
+
+    color: black;
+    font-weight: 100;
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.login-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+
+    margin: 29px;
+}
+
+.input-something {
+    width: 610px;
+    margin-left: 93px;
+}
+
+
+.input-id, .input-pw, .input-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300.;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #919191;
+
+    margin-bottom: 25px;
+
+    text-align: left;
+}
+
+.input-email {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300.;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #919191;
+
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    text-align: left;
+}
+
+.IJBtn {
+    width: 424px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #589BFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+    border: none;
+
+    margin: 15px;
+}
+
+.signupBtn {
+    width: 424px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #589BFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+
+    border: none;
+
+    margin-bottom: 25px;
+}
